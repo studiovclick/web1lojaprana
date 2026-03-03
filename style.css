@@ -1,0 +1,184 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilização do card */
+#card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#card img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+#texto-card {
+    max-width: 500px;
+}
+
+#texto-card h1 {
+    color: #4CAF50;
+}
+
+#texto-card p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilização do menu expansivo */
+#menu-expansivo {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+#menu-expansivo ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-expansivo ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#menu-expansivo ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização das seções */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.categoria {
+    margin: 20px 0;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.produtos div {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+}
+
+/* Estilização do mapa e botões */
+#mapa {
+    width: 100%;
+    height: 300px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.botoes-mapa button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botoes-mapa button:hover {
+    background-color: #45a049;
+}
+
+/* Estilização do carrinho de compras */
+#carrinho {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#itens-carrinho {
+    margin: 20px 0;
+}
+
+#itens-carrinho div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#resumo-carrinho {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#resumo-carrinho p {
+    margin: 5px 0;
+}
+
+#finalizar-compra {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#finalizar-compra:hover {
+    background-color: #45a049;
+}

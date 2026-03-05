@@ -9,39 +9,318 @@
   </head>
   <body>
     <header>
-      <h1>Produtos</h1>
+      <nav id="menu-expansivo">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+          <li><a href="sugestoes.html">Sugestões</a></li>
+          <li><a href="#carrinho">Carrinho (<span id="contador-menu">0</span>)</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="categoria">
         <h2>Granel (a partir de 50g)</h2>
         <div class="produtos">
-          <div class="produto">Produto 1 - R$ 5,00</div>
-          <div class="produto">Produto 2 - R$ 10,00</div>
-          <div class="produto">Produto 3 - R$ 15,00</div>
-          <div class="produto">Produto 4 - R$ 20,00</div>
-          <div class="produto">Produto 5 - R$ 25,00</div>
-          <div class="produto">Produto 6 - R$ 30,00</div>
-          <div class="produto">Produto 7 - R$ 35,00</div>
-          <div class="produto">Produto 8 - R$ 40,00</div>
-          <div class="produto">Produto 9 - R$ 45,00</div>
-          <div class="produto">Produto 10 - R$ 50,00</div>
+          <div class="produto" data-nome="Acerola em Pó" data-preco="5.00">
+            <img src="acerolaempo.jpg" alt="Acerola em Pó" />
+            <h3>Acerola em Pó</h3>
+            <p>Preço unitário: R$ 5,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 5,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Ameixa Preta" data-preco="10.00">
+            <img src="ameixapreta.jpg" alt="Ameixa Preta" />
+            <h3>Ameixa Preta</h3>
+            <p>Preço unitário: R$ 10,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 10,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Castanha do Pará" data-preco="15.00">
+            <img src="castanhadopara.jpg" alt="Castanha do Pará" />
+            <h3>Castanha do Pará</h3>
+            <p>Preço unitário: R$ 15,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 15,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Amora Seca" data-preco="20.00">
+            <img src="amoraseca.jpg" alt="Amora Seca" />
+            <h3>Amora Seca</h3>
+            <p>Preço unitário: R$ 20,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 20,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Amora Desidratada" data-preco="25.00">
+            <img src="amoraseca2.jpg" alt="Amora Desidratada" />
+            <h3>Amora Desidratada</h3>
+            <p>Preço unitário: R$ 25,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 25,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Cacau em Pó" data-preco="30.00">
+            <img src="cacauempo.jpg" alt="Cacau em Pó" />
+            <h3>Cacau em Pó</h3>
+            <p>Preço unitário: R$ 30,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 30,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Castanha do Pará" data-preco="35.00">
+            <img src="castanhadopara.jpg" alt="Castanha do Pará" />
+            <h3>Castanha do Pará</h3>
+            <p>Preço unitário: R$ 35,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 35,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Anis Estrelado" data-preco="40.00">
+            <img src="anisestrelado.jpg" alt="Anis Estrelado" />
+            <h3>Anis Estrelado</h3>
+            <p>Preço unitário: R$ 40,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 40,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Açafrão da Terra" data-preco="45.00">
+            <img src="acafrao.jpg" alt="Açafrão da Terra" />
+            <h3>Açafrão da Terra</h3>
+            <p>Preço unitário: R$ 45,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 45,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div class="produto" data-nome="Cravo da Índia" data-preco="50.00">
+            <img src="cravodaindia.jpg" alt="Cravo da Índia" />
+            <h3>Cravo da Índia</h3>
+            <p>Preço unitário: R$ 50,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 50,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
         </div>
       </section>
       <section class="categoria">
         <h2>Industrializados (com embalagem)</h2>
         <div class="produtos">
-          <div class="produto">Produto 1 - R$ 5,00</div>
-          <div class="produto">Produto 2 - R$ 10,00</div>
-          <div class="produto">Produto 3 - R$ 15,00</div>
-          <div class="produto">Produto 4 - R$ 20,00</div>
-          <div class="produto">Produto 5 - R$ 25,00</div>
-          <div class="produto">Produto 6 - R$ 30,00</div>
-          <div class="produto">Produto 7 - R$ 35,00</div>
-          <div class="produto">Produto 8 - R$ 40,00</div>
-          <div class="produto">Produto 9 - R$ 45,00</div>
-          <div class="produto">Produto 10 - R$ 50,00</div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 1"
+            data-preco="5.00"
+          >
+            <img src="images/produto1.jpg" alt="Produto Industrializado 1" />
+            <h3>Produto Industrializado 1</h3>
+            <p>Preço unitário: R$ 5,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 5,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 2"
+            data-preco="10.00"
+          >
+            <img src="images/produto2.jpg" alt="Produto Industrializado 2" />
+            <h3>Produto Industrializado 2</h3>
+            <p>Preço unitário: R$ 10,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 10,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 3"
+            data-preco="15.00"
+          >
+            <img src="images/produto3.jpg" alt="Produto Industrializado 3" />
+            <h3>Produto Industrializado 3</h3>
+            <p>Preço unitário: R$ 15,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 15,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 4"
+            data-preco="20.00"
+          >
+            <img src="images/produto4.jpg" alt="Produto Industrializado 4" />
+            <h3>Produto Industrializado 4</h3>
+            <p>Preço unitário: R$ 20,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 20,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 5"
+            data-preco="25.00"
+          >
+            <img src="images/produto5.jpg" alt="Produto Industrializado 5" />
+            <h3>Produto Industrializado 5</h3>
+            <p>Preço unitário: R$ 25,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 25,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 6"
+            data-preco="30.00"
+          >
+            <img src="images/produto6.jpg" alt="Produto Industrializado 6" />
+            <h3>Produto Industrializado 6</h3>
+            <p>Preço unitário: R$ 30,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 30,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 7"
+            data-preco="35.00"
+          >
+            <img src="images/produto7.jpg" alt="Produto Industrializado 7" />
+            <h3>Produto Industrializado 7</h3>
+            <p>Preço unitário: R$ 35,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 35,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 8"
+            data-preco="40.00"
+          >
+            <img src="images/produto8.jpg" alt="Produto Industrializado 8" />
+            <h3>Produto Industrializado 8</h3>
+            <p>Preço unitário: R$ 40,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 40,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 9"
+            data-preco="45.00"
+          >
+            <img src="images/produto9.jpg" alt="Produto Industrializado 9" />
+            <h3>Produto Industrializado 9</h3>
+            <p>Preço unitário: R$ 45,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 45,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
+          <div
+            class="produto"
+            data-nome="Produto Industrializado 10"
+            data-preco="50.00"
+          >
+            <img src="images/produto10.jpg" alt="Produto Industrializado 10" />
+            <h3>Produto Industrializado 10</h3>
+            <p>Preço unitário: R$ 50,00</p>
+            <div class="quantidade">
+              <button class="menos">-</button>
+              <input type="number" class="qtd" value="1" min="1" readonly />
+              <button class="mais">+</button>
+            </div>
+            <p class="preco-total">Total: R$ 50,00</p>
+            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+          </div>
         </div>
       </section>
     </main>
+    <section id="carrinho">
+      <h2>Carrinho de Compras</h2>
+      <div id="itens-carrinho"></div>
+      <div id="resumo-carrinho">
+        <p>Itens no carrinho: <span id="contador-itens">0</span></p>
+        <p>Valor total: R$ <span id="valor-total">0.00</span></p>
+        <button id="finalizar-compra">Finalizar Compra</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>

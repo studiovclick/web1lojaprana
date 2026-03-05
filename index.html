@@ -16,6 +16,7 @@
           <li><a href="localizacao.html">Localização</a></li>
           <li><a href="contatos.html">Contatos</a></li>
           <li><a href="sugestoes.html">Sugestões</a></li>
+          <li><a href="#carrinho">Carrinho (<span id="contador-menu">0</span>)</a></li>
         </ul>
       </nav>
     </header>
@@ -34,7 +35,15 @@
           </div>
         </div>
       </section>
-
+      <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="itens-carrinho"></div>
+        <div id="resumo-carrinho">
+          <p>Itens no carrinho: <span id="contador-itens">0</span></p>
+          <p>Valor total: R$ <span id="valor-total">0.00</span></p>
+          <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+      </section>
      <script src="script.js"></script>
   </body>
 </html>
